@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		032C3CD322301ECF00253B33 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C3CD222301ECF00253B33 /* AppDelegate.swift */; };
+		032C3CD522301ECF00253B33 /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C3CD422301ECF00253B33 /* Calculator.swift */; };
+		032C3CD822301ECF00253B33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032C3CD622301ECF00253B33 /* Main.storyboard */; };
+		032C3CDA22301ED900253B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 032C3CD922301ED900253B33 /* Assets.xcassets */; };
+		032C3CDD22301ED900253B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 032C3CDB22301ED900253B33 /* LaunchScreen.storyboard */; };
+		032C3CE922302CB800253B33 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C3CE722302CB800253B33 /* TableViewCell.swift */; };
+		032C3CEA22302CB800253B33 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032C3CE822302CB800253B33 /* TableViewCell.xib */; };
+		032C3D132231AB3D00253B33 /* ResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 032C3D112231AB3D00253B33 /* ResultTableViewCell.xib */; };
+		032C3D142231AB3D00253B33 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C3D122231AB3D00253B33 /* ResultTableViewCell.swift */; };
+		032C3D192231AE5C00253B33 /* Mortage Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C3D182231AE5C00253B33 /* Mortage Calculator.swift */; };
+		03E9040822495C7400FDEB9C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E9040722495C7400FDEB9C /* MainMenu.swift */; };
+		03E9040A224ABCA400FDEB9C /* WebSiteArticleTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E90409224ABCA200FDEB9C /* WebSiteArticleTitle.swift */; };
+		03E9040C224BD32B00FDEB9C /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E9040B224BD32B00FDEB9C /* ContactUs.swift */; };
+		03F32CDF225698CE0079E7D8 /* WebScraping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F32CDE225698CE0079E7D8 /* WebScraping.swift */; };
+		03F32CE1225698F80079E7D8 /* WebContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F32CE0225698F80079E7D8 /* WebContent.swift */; };
+		03F32CE622569C670079E7D8 /* DisplayWebPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F32CE522569C670079E7D8 /* DisplayWebPage.swift */; };
+		03F32CE822569FB80079E7D8 /* LinkSorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F32CE722569FB80079E7D8 /* LinkSorting.swift */; };
+		9DE8F17D6A6E6EC420326406 /* Pods_Montage_Calculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2319C49F56413CE2B11FBBF0 /* Pods_Montage_Calculator.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		032C3CCF22301ECF00253B33 /* Montage Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Montage Calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		032C3CD222301ECF00253B33 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		032C3CD422301ECF00253B33 /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		032C3CD722301ECF00253B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		032C3CD922301ED900253B33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		032C3CDC22301ED900253B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		032C3CDE22301ED900253B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		032C3CE722302CB800253B33 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		032C3CE822302CB800253B33 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		032C3D112231AB3D00253B33 /* ResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultTableViewCell.xib; sourceTree = "<group>"; };
+		032C3D122231AB3D00253B33 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
+		032C3D182231AE5C00253B33 /* Mortage Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mortage Calculator.swift"; sourceTree = "<group>"; };
+		03E9040722495C7400FDEB9C /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		03E90409224ABCA200FDEB9C /* WebSiteArticleTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSiteArticleTitle.swift; sourceTree = "<group>"; };
+		03E9040B224BD32B00FDEB9C /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
+		03F32CDE225698CE0079E7D8 /* WebScraping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebScraping.swift; sourceTree = "<group>"; };
+		03F32CE0225698F80079E7D8 /* WebContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContent.swift; sourceTree = "<group>"; };
+		03F32CE522569C670079E7D8 /* DisplayWebPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayWebPage.swift; sourceTree = "<group>"; };
+		03F32CE722569FB80079E7D8 /* LinkSorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSorting.swift; sourceTree = "<group>"; };
+		0E22CD55F427D8F369944900 /* Pods-Montage Calculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montage Calculator.release.xcconfig"; path = "Target Support Files/Pods-Montage Calculator/Pods-Montage Calculator.release.xcconfig"; sourceTree = "<group>"; };
+		2319C49F56413CE2B11FBBF0 /* Pods_Montage_Calculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Montage_Calculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF352FB5277A8D18A68C27F3 /* Pods-Montage Calculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Montage Calculator.debug.xcconfig"; path = "Target Support Files/Pods-Montage Calculator/Pods-Montage Calculator.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		032C3CCC22301ECF00253B33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE8F17D6A6E6EC420326406 /* Pods_Montage_Calculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		032C3CC622301ECE00253B33 = {
+			isa = PBXGroup;
+			children = (
+				032C3CD122301ECF00253B33 /* Montage Calculator */,
+				032C3CD022301ECF00253B33 /* Products */,
+				03F32CD0223A9D2300920B49 /* Frameworks */,
+				6299192BF92FBE07D15354BF /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		032C3CD022301ECF00253B33 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				032C3CCF22301ECF00253B33 /* Montage Calculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		032C3CD122301ECF00253B33 /* Montage Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				032C3D152231AC5600253B33 /* Model */,
+				032C3CE522302AFB00253B33 /* Controller */,
+				032C3CE422302AE400253B33 /* View */,
+				032C3CD922301ED900253B33 /* Assets.xcassets */,
+				032C3CDE22301ED900253B33 /* Info.plist */,
+			);
+			path = "Montage Calculator";
+			sourceTree = "<group>";
+		};
+		032C3CE422302AE400253B33 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				032C3CD622301ECF00253B33 /* Main.storyboard */,
+				032C3CDB22301ED900253B33 /* LaunchScreen.storyboard */,
+				032C3CE622302B1B00253B33 /* Custom Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		032C3CE522302AFB00253B33 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				03F989CE2256842600242691 /* Website */,
+				032C3CD222301ECF00253B33 /* AppDelegate.swift */,
+				032C3CD422301ECF00253B33 /* Calculator.swift */,
+				03E9040722495C7400FDEB9C /* MainMenu.swift */,
+				03E9040B224BD32B00FDEB9C /* ContactUs.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		032C3CE622302B1B00253B33 /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				032C3CE722302CB800253B33 /* TableViewCell.swift */,
+				032C3CE822302CB800253B33 /* TableViewCell.xib */,
+				032C3D122231AB3D00253B33 /* ResultTableViewCell.swift */,
+				032C3D112231AB3D00253B33 /* ResultTableViewCell.xib */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		032C3D152231AC5600253B33 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				032C3D182231AE5C00253B33 /* Mortage Calculator.swift */,
+				03F32CDE225698CE0079E7D8 /* WebScraping.swift */,
+				03F32CE0225698F80079E7D8 /* WebContent.swift */,
+				03F32CE722569FB80079E7D8 /* LinkSorting.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		03F32CD0223A9D2300920B49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2319C49F56413CE2B11FBBF0 /* Pods_Montage_Calculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03F989CE2256842600242691 /* Website */ = {
+			isa = PBXGroup;
+			children = (
+				03E90409224ABCA200FDEB9C /* WebSiteArticleTitle.swift */,
+				03F32CE522569C670079E7D8 /* DisplayWebPage.swift */,
+			);
+			path = Website;
+			sourceTree = "<group>";
+		};
+		6299192BF92FBE07D15354BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF352FB5277A8D18A68C27F3 /* Pods-Montage Calculator.debug.xcconfig */,
+				0E22CD55F427D8F369944900 /* Pods-Montage Calculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		032C3CCE22301ECF00253B33 /* Montage Calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 032C3CE122301ED900253B33 /* Build configuration list for PBXNativeTarget "Montage Calculator" */;
+			buildPhases = (
+				45D2FF8CBAB581DF312A253A /* [CP] Check Pods Manifest.lock */,
+				032C3CCB22301ECF00253B33 /* Sources */,
+				032C3CCC22301ECF00253B33 /* Frameworks */,
+				032C3CCD22301ECF00253B33 /* Resources */,
+				36585F8E682496C9BA70359B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Montage Calculator";
+			productName = "Montage Calculator";
+			productReference = 032C3CCF22301ECF00253B33 /* Montage Calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		032C3CC722301ECE00253B33 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = TIEC;
+				TargetAttributes = {
+					032C3CCE22301ECF00253B33 = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 032C3CCA22301ECE00253B33 /* Build configuration list for PBXProject "Montage Calculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 032C3CC622301ECE00253B33;
+			productRefGroup = 032C3CD022301ECF00253B33 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				032C3CCE22301ECF00253B33 /* Montage Calculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		032C3CCD22301ECF00253B33 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				032C3D132231AB3D00253B33 /* ResultTableViewCell.xib in Resources */,
+				032C3CDD22301ED900253B33 /* LaunchScreen.storyboard in Resources */,
+				032C3CEA22302CB800253B33 /* TableViewCell.xib in Resources */,
+				032C3CDA22301ED900253B33 /* Assets.xcassets in Resources */,
+				032C3CD822301ECF00253B33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36585F8E682496C9BA70359B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Montage Calculator/Pods-Montage Calculator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Montage Calculator/Pods-Montage Calculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45D2FF8CBAB581DF312A253A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Montage Calculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		032C3CCB22301ECF00253B33 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F32CE622569C670079E7D8 /* DisplayWebPage.swift in Sources */,
+				03F32CE1225698F80079E7D8 /* WebContent.swift in Sources */,
+				03F32CDF225698CE0079E7D8 /* WebScraping.swift in Sources */,
+				032C3D192231AE5C00253B33 /* Mortage Calculator.swift in Sources */,
+				03E9040822495C7400FDEB9C /* MainMenu.swift in Sources */,
+				03E9040A224ABCA400FDEB9C /* WebSiteArticleTitle.swift in Sources */,
+				032C3CE922302CB800253B33 /* TableViewCell.swift in Sources */,
+				032C3CD522301ECF00253B33 /* Calculator.swift in Sources */,
+				03F32CE822569FB80079E7D8 /* LinkSorting.swift in Sources */,
+				032C3D142231AB3D00253B33 /* ResultTableViewCell.swift in Sources */,
+				03E9040C224BD32B00FDEB9C /* ContactUs.swift in Sources */,
+				032C3CD322301ECF00253B33 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		032C3CD622301ECF00253B33 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032C3CD722301ECF00253B33 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		032C3CDB22301ED900253B33 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				032C3CDC22301ED900253B33 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		032C3CDF22301ED900253B33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		032C3CE022301ED900253B33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		032C3CE222301ED900253B33 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF352FB5277A8D18A68C27F3 /* Pods-Montage Calculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G293475JL;
+				INFOPLIST_FILE = "Montage Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "chufana.Montage-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		032C3CE322301ED900253B33 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E22CD55F427D8F369944900 /* Pods-Montage Calculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7G293475JL;
+				INFOPLIST_FILE = "Montage Calculator/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "chufana.Montage-Calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		032C3CCA22301ECE00253B33 /* Build configuration list for PBXProject "Montage Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032C3CDF22301ED900253B33 /* Debug */,
+				032C3CE022301ED900253B33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		032C3CE122301ED900253B33 /* Build configuration list for PBXNativeTarget "Montage Calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				032C3CE222301ED900253B33 /* Debug */,
+				032C3CE322301ED900253B33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 032C3CC722301ECE00253B33 /* Project object */;
+}
