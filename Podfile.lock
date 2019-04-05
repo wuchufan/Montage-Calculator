@@ -1,16 +1,20 @@
 PODS:
+  - SVProgressHUD (2.2.5)
   - SwiftSoup (1.7.4)
 
 DEPENDENCIES:
+  - SVProgressHUD
   - SwiftSoup
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - SVProgressHUD
     - SwiftSoup
 
 SPEC CHECKSUMS:
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftSoup: 92f5b348c131aed8af04f4326db1579ab19fa08c
 
-PODFILE CHECKSUM: e3c2f83b5e7a197560d53e1763d79cf95025f233
+PODFILE CHECKSUM: a1ba4ecd5ca9ceeb0e820ae9664c9bb3c982b081
 
 COCOAPODS: 1.6.1

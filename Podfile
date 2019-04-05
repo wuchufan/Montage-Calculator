@@ -7,5 +7,6 @@ target 'Montage Calculator' do
 
   # Pods for Montage Calculator
 	pod 'SwiftSoup'
+	pod 'SVProgressHUD'
 
 end

@@ -29,18 +29,18 @@ class WebScraping {
         let link = try doc.getElementsByAttributeValueContaining("href", "https://www.yuchakcorp.com/single-post").array()
         let webLinks = linkSorting.checkHerf(htmlArray: link)
         
-        
-        print("------------------------------------------ Doc Begins -------------------------------------------")
-        print(doc)
-        print("------------------------------------------ Doc Ends -------------------------------------------")
-        print(link)
-        print("------------------------------------------ Link Ends -------------------------------------------")
-        print(webTitles)
-        print("------------------------------------------ WebTitles Ends -------------------------------------------")
-        print(webLinks)
-        print("------------------------------------------ WebLinks Ends -------------------------------------------")
-
-        
+//
+//        print("------------------------------------------ Doc Begins -------------------------------------------")
+//        print(doc)
+//        print("------------------------------------------ Doc Ends -------------------------------------------")
+//        print(link)
+//        print("------------------------------------------ Link Ends -------------------------------------------")
+//        print(webTitles)
+//        print("------------------------------------------ WebTitles Ends -------------------------------------------")
+//        print(webLinks)
+//        print("------------------------------------------ WebLinks Ends -------------------------------------------")
+//
+//
         var contents = [WebContent]()
         for i in 0..<webTitles.count{
             let titles = try webTitles[i].text()
