@@ -15,26 +15,27 @@ class MainMenu: UIViewController {
 
     let webView = WKWebView()
     @IBAction func openWebPageTitle(_ sender: Any) {
-        SVProgressHUD.show()
+        SVProgressHUD.show(withStatus: "Loading...")
         webView.reload()
-        webView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (innerHTML, error) in
-            do {
-//                print ("innerHTML is : \(innerHTML)")
-
-                let segueWebScraping = try WebScraping(innerHTML)
-                guard segueWebScraping.contents.count != 0  else {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8){
+            self.webView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (innerHTML, error) in
+                do {
+                    //print ("innerHTML is : \(innerHTML)")
+                    let segueWebScraping = try WebScraping(innerHTML)
+                    guard segueWebScraping.contents.count != 0  else {
+                        SVProgressHUD.dismiss()
+                        self.ShowWebError()
+                        return
+                    }
+                    self.performSegue(withIdentifier: "segue", sender: segueWebScraping.contents)
                     SVProgressHUD.dismiss()
-                    self.ShowWebError()
-                    return
+    
+                } catch {
+                    print (error)
                 }
-
-                self.performSegue(withIdentifier: "segue", sender: segueWebScraping.contents)
-                SVProgressHUD.dismiss()
-
-            } catch {
-                print (error)
             }
         }
+
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
