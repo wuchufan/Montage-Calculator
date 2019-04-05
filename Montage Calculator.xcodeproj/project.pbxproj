@@ -107,8 +107,8 @@
 		032C3CE522302AFB00253B33 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				03F989CE2256842600242691 /* Website */,
 				032C3CD222301ECF00253B33 /* AppDelegate.swift */,
+				03F989CE2256842600242691 /* Website */,
 				032C3CD422301ECF00253B33 /* Calculator.swift */,
 				03E9040722495C7400FDEB9C /* MainMenu.swift */,
 				03E9040B224BD32B00FDEB9C /* ContactUs.swift */,
@@ -131,9 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				032C3D182231AE5C00253B33 /* Mortage Calculator.swift */,
-				03F32CDE225698CE0079E7D8 /* WebScraping.swift */,
-				03F32CE0225698F80079E7D8 /* WebContent.swift */,
-				03F32CE722569FB80079E7D8 /* LinkSorting.swift */,
+				03F32CE92257C5080079E7D8 /* WebSite */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,6 +142,16 @@
 				2319C49F56413CE2B11FBBF0 /* Pods_Montage_Calculator.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		03F32CE92257C5080079E7D8 /* WebSite */ = {
+			isa = PBXGroup;
+			children = (
+				03F32CDE225698CE0079E7D8 /* WebScraping.swift */,
+				03F32CE0225698F80079E7D8 /* WebContent.swift */,
+				03F32CE722569FB80079E7D8 /* LinkSorting.swift */,
+			);
+			path = WebSite;
 			sourceTree = "<group>";
 		};
 		03F989CE2256842600242691 /* Website */ = {

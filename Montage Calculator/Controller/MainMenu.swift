@@ -8,6 +8,7 @@
 
 import UIKit
 import WebKit
+import MessageUI
 
 class MainMenu: UIViewController {
 
@@ -16,7 +17,12 @@ class MainMenu: UIViewController {
         webView.reload()
         webView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (innerHTML, error) in
             do {
+                print ("innerHTML is : \(innerHTML)")
                 let segueWebScraping = try WebScraping(innerHTML)
+                guard segueWebScraping.contents.count != 0  else {
+                    self.ShowWebError()
+                    return
+                }
                 self.performSegue(withIdentifier: "segue", sender: segueWebScraping.contents)
             } catch {
                 print (error)
@@ -25,10 +31,18 @@ class MainMenu: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let contents = try sender as AnyObject as? [WebContent], let destination = try segue.destination as? Website else {
+        guard let contents = sender as AnyObject as? [WebContent], let destination = segue.destination as? Website else {
             return
         }
         destination.receivedWebContent = contents
+    }
+    
+    func ShowWebError(){
+        let sendWebErrorAlert = UIAlertController(title: "Could not load website", message: "Could not load website, try again later", preferredStyle: .alert)
+        let dismiss = UIAlertAction(title: "Fine", style: .default, handler: nil)
+        sendWebErrorAlert.addAction(dismiss)
+        self.present(sendWebErrorAlert, animated: true, completion: nil)
+        
     }
     
     

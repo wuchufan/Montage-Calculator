@@ -24,20 +24,22 @@ class WebScraping {
         
         let linkSorting = LinkSorting()
         let doc = try SwiftSoup.parse(htmlString)
+
         let webTitles = try doc.getElementsByClass("font_5").array()
         let link = try doc.getElementsByAttributeValueContaining("href", "https://www.yuchakcorp.com/single-post").array()
         let webLinks = linkSorting.checkHerf(htmlArray: link)
         
         
-        //        print("------------------------------------------ Doc Begins -------------------------------------------")
-        //        print(doc)
-        //        print("------------------------------------------ Doc Ends -------------------------------------------")
-//        print(webTitles)
-//        print("------------------------------------------ WebTitles Ends -------------------------------------------")
-//
-//        print(webLinks)
-//        print("------------------------------------------ WebLinks Ends -------------------------------------------")
-//
+        print("------------------------------------------ Doc Begins -------------------------------------------")
+        print(doc)
+        print("------------------------------------------ Doc Ends -------------------------------------------")
+        print(link)
+        print("------------------------------------------ Link Ends -------------------------------------------")
+        print(webTitles)
+        print("------------------------------------------ WebTitles Ends -------------------------------------------")
+        print(webLinks)
+        print("------------------------------------------ WebLinks Ends -------------------------------------------")
+
         
         var contents = [WebContent]()
         for i in 0..<webTitles.count{
