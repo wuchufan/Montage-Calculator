@@ -56,7 +56,7 @@ class MainMenu: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print("item 1 loaded")
         let url = URL(string: "https://www.yuchakcorp.com/blog")!
         let request = URLRequest(url: url)
         webView.load(request)

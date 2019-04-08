@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Md6-To-eLH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KQu-i9-V9a">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,7 +10,34 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Interest rate-->
+        <scene sceneID="kYE-xr-g98">
+            <objects>
+                <viewController id="PTO-0u-8gY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iCJ-90-8h9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGM-2w-4VN">
+                                <rect key="frame" x="0.0" y="476" width="320" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Mortage Calculator"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Zzo-xI-0Y2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="pqB-MY-Dxp"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Interest rate" id="N9u-Ik-5B5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Fe-Xv-yfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1646" y="-1363"/>
+        </scene>
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Montage_Calculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,21 +45,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fBb-YN-U5t">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="fBb-YN-U5t">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <sections/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="fBb-YN-U5t" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="188-Uy-EYW"/>
-                            <constraint firstItem="fBb-YN-U5t" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="TLa-2h-Yeo"/>
-                            <constraint firstItem="fBb-YN-U5t" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="g3O-nK-Uu3"/>
-                            <constraint firstItem="fBb-YN-U5t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jlW-gd-qGd"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="jjn-xE-xqK"/>
                     <navigationItem key="navigationItem" id="oJA-aU-IYp"/>
                     <connections>
                         <outlet property="calculationDataTableView" destination="fBb-YN-U5t" id="Aus-u3-qwv"/>
@@ -40,63 +63,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-469" y="-1337"/>
+            <point key="canvasLocation" x="-913" y="-1364"/>
         </scene>
-        <!--Main Menu-->
+        <!--Welcome-->
         <scene sceneID="upN-qu-vLo">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jig-Pq-3do" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="UHE-0w-Ppz" customClass="MainMenu" customModule="Montage_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uef-KX-jYZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6G-9o-10T">
-                                <rect key="frame" x="95" y="81" width="131" height="122"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="To calculator">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="dqk-yt-LsJ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9E-Fu-O2E">
                                 <rect key="frame" x="96" y="240" width="128" height="115"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="To WebPage">
+                                <state key="normal" title=" 最新资讯">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
                                     <action selector="openWebPageTitle:" destination="UHE-0w-Ppz" eventType="touchUpInside" id="DdB-3O-B4Z"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Vc-CI-Bzi">
-                                <rect key="frame" x="95" y="403" width="128" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Contact Us">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="5yD-hc-Kg2" kind="show" id="EHv-0X-iM6"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Dq9-Fq-2xa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FPg-1N-oer"/>
+                    <navigationItem key="navigationItem" title="Welcome" id="FPg-1N-oer"/>
                     <connections>
                         <segue destination="ltI-rQ-16l" kind="show" identifier="segue" id="snZ-e0-kAB"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jig-Pq-3do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1646.25" y="-600"/>
         </scene>
-        <!--Website-->
+        <!--Articles-->
         <scene sceneID="aWI-O5-9EB">
             <objects>
                 <viewController id="ltI-rQ-16l" customClass="Website" customModule="Montage_Calculator" customModuleProvider="target" sceneMemberID="viewController">
@@ -105,7 +106,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="5Os-lk-Ipn">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
@@ -118,6 +119,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6HB-A8-KsP"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Articles" id="vm9-hd-0K2">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="Sqw-CY-b4r"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="titleContainer" destination="5Os-lk-Ipn" id="U1j-fo-Sy7"/>
                         <segue destination="WOd-Dt-Mb6" kind="show" identifier="segueToWebPage" id="iJS-Ts-1Jb"/>
@@ -125,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fJ6-eR-QLf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-487.5" y="-558.80281690140851"/>
+            <point key="canvasLocation" x="-913" y="-600"/>
         </scene>
         <!--Display Web Page-->
         <scene sceneID="vgt-E0-M78">
@@ -136,7 +140,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBQ-b2-4Y5">
-                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="455"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -153,13 +157,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="3NF-SH-1vb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="HN9-CP-byN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="sa4-07-eZ6"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="web" destination="EBQ-b2-4Y5" id="cXo-Ba-3Dp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wvF-X4-ph6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="465" y="-559.85915492957747"/>
+            <point key="canvasLocation" x="-193" y="-600"/>
         </scene>
         <!--Contact Us-->
         <scene sceneID="p5b-hF-7x2">
@@ -195,15 +202,36 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hUO-ir-sMf"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Contact Us" id="VDw-DA-kxG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWL-HZ-axb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-488" y="310"/>
+            <point key="canvasLocation" x="-2451" y="127"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="fSp-Vb-sEK">
+            <objects>
+                <tabBarController id="KQu-i9-V9a" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="sa5-dh-ve8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Md6-To-eLH" kind="relationship" relationship="viewControllers" id="5qx-zR-Cie"/>
+                        <segue destination="glN-0v-Yrq" kind="relationship" relationship="viewControllers" id="7bF-WR-tcE"/>
+                        <segue destination="5yD-hc-Kg2" kind="relationship" relationship="viewControllers" id="77p-xP-Mk3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xr-fz-pcP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4103" y="-618"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="tHm-jF-d55">
             <objects>
                 <navigationController id="Md6-To-eLH" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" id="kAf-pn-mcb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CAx-DS-uEV">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -215,6 +243,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhA-n3-Fc7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2449" y="-600"/>
+        </scene>
+        <!--Rates-->
+        <scene sceneID="eHk-hV-6KF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="glN-0v-Yrq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Rates" id="kZU-Xy-iGt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rdN-Gu-n7h">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PTO-0u-8gY" kind="relationship" relationship="rootViewController" id="8ph-Cl-fWu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Pq-d7-No7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2451" y="-1362"/>
         </scene>
     </scenes>
 </document>

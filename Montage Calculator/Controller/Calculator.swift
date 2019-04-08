@@ -49,6 +49,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("item 2 loaded")
         
         //setting tableview delegate
         calculationDataTableView.delegate = self
@@ -76,9 +77,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewWillAppear(_ animated: Bool) {
 
         print("the height of TableView is: \(self.view.frame.height)")
-        print("the height of navigation bar is :\( self.navigationController!.navigationBar.frame.size.height)")
+//        print("the height of navigation bar is :\( self.navigationController!.navigationBar.frame.size.height)")
         print("the height of sectoinFooterHeight is :\(self.calculationDataTableView.sectionFooterHeight)")
-        calculationDataTableView.rowHeight = ((self.view.frame.height  - self.navigationController!.navigationBar.frame.size.height) / 9)
+//        calculationDataTableView.rowHeight = ((self.view.frame.height  - self.navigationController!.navigationBar.frame.size.height) / 9)
+        calculationDataTableView.rowHeight = (self.view.frame.height / 9)
 
     }
     

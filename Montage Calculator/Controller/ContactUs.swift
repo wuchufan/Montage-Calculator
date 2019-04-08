@@ -33,6 +33,7 @@ class ContactUs: UIViewController, MFMailComposeViewControllerDelegate{
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        print("item 3 loaded")
     }
     
 
