@@ -35,7 +35,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Fe-Xv-yfK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1646" y="-1363"/>
+            <point key="canvasLocation" x="-1644" y="-1701"/>
         </scene>
         <!--Item-->
         <scene sceneID="tne-QT-ifu">
@@ -63,30 +63,86 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-913" y="-1364"/>
+            <point key="canvasLocation" x="-911" y="-1702"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="upN-qu-vLo">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jig-Pq-3do" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="UHE-0w-Ppz" customClass="MainMenu" customModule="Montage_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uef-KX-jYZ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9E-Fu-O2E">
-                                <rect key="frame" x="96" y="240" width="128" height="115"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title=" 最新资讯">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="openWebPageTitle:" destination="UHE-0w-Ppz" eventType="touchUpInside" id="DdB-3O-B4Z"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="rhC-Ed-X9l">
+                                <rect key="frame" x="8" y="77" width="304" height="429"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cRb-0m-WD6">
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="137"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9E-Fu-O2E">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="137"/>
+                                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="openWebPageTitle:" destination="UHE-0w-Ppz" eventType="touchUpInside" id="DdB-3O-B4Z"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最新资讯" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VsJ-0R-bVs">
+                                                <rect key="frame" x="148" y="25" width="69.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sb1" translatesAutoresizingMaskIntoConstraints="NO" id="9TC-Y1-beA">
+                                                <rect key="frame" x="8" y="8" width="121" height="121"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="121" id="1ll-FV-06S"/>
+                                                    <constraint firstAttribute="width" constant="121" id="VVh-3d-XeF"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out our stuff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d3M-3g-NMa">
+                                                <rect key="frame" x="148" y="82" width="148" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="d3M-3g-NMa" firstAttribute="leading" secondItem="9TC-Y1-beA" secondAttribute="trailing" constant="19" id="10H-67-gKJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="U9E-Fu-O2E" secondAttribute="trailing" id="Bnr-tK-kuv"/>
+                                            <constraint firstItem="U9E-Fu-O2E" firstAttribute="top" secondItem="cRb-0m-WD6" secondAttribute="top" id="CCo-9e-ZkL"/>
+                                            <constraint firstItem="VsJ-0R-bVs" firstAttribute="leading" secondItem="9TC-Y1-beA" secondAttribute="trailing" constant="19" id="QuX-9K-AwO"/>
+                                            <constraint firstItem="9TC-Y1-beA" firstAttribute="leading" secondItem="cRb-0m-WD6" secondAttribute="leading" constant="8" id="RdE-0L-M7W"/>
+                                            <constraint firstItem="VsJ-0R-bVs" firstAttribute="top" secondItem="cRb-0m-WD6" secondAttribute="top" constant="25" id="Xhk-Rj-DQo"/>
+                                            <constraint firstItem="9TC-Y1-beA" firstAttribute="top" secondItem="cRb-0m-WD6" secondAttribute="top" constant="8" id="bSq-sh-yxR"/>
+                                            <constraint firstItem="U9E-Fu-O2E" firstAttribute="leading" secondItem="cRb-0m-WD6" secondAttribute="leading" id="efu-8S-7LM"/>
+                                            <constraint firstAttribute="trailing" secondItem="VsJ-0R-bVs" secondAttribute="trailing" constant="86.5" id="gAg-Ct-98v"/>
+                                            <constraint firstItem="d3M-3g-NMa" firstAttribute="top" secondItem="VsJ-0R-bVs" secondAttribute="bottom" constant="36.5" id="gzL-Oy-6VB"/>
+                                            <constraint firstAttribute="bottom" secondItem="U9E-Fu-O2E" secondAttribute="bottom" id="kNj-m9-yvg"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bp0-3M-wpl">
+                                        <rect key="frame" x="0.0" y="146" width="304" height="137"/>
+                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9y-Hw-nf6">
+                                        <rect key="frame" x="0.0" y="292" width="304" height="137"/>
+                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dq9-Fq-2xa" firstAttribute="trailing" secondItem="rhC-Ed-X9l" secondAttribute="trailing" constant="8" id="6Pw-uw-GKQ"/>
+                            <constraint firstItem="rhC-Ed-X9l" firstAttribute="top" secondItem="Dq9-Fq-2xa" secondAttribute="top" constant="13" id="PtK-iK-bUW"/>
+                            <constraint firstItem="rhC-Ed-X9l" firstAttribute="leading" secondItem="Dq9-Fq-2xa" secondAttribute="leading" constant="8" id="Ycm-2I-Uz5"/>
+                            <constraint firstItem="Dq9-Fq-2xa" firstAttribute="bottom" secondItem="rhC-Ed-X9l" secondAttribute="bottom" constant="13" id="cfB-We-uya"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Dq9-Fq-2xa"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="FPg-1N-oer"/>
@@ -94,6 +150,7 @@
                         <segue destination="ltI-rQ-16l" kind="show" identifier="segue" id="snZ-e0-kAB"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jig-Pq-3do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1646.25" y="-600"/>
         </scene>
@@ -261,7 +318,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Pq-d7-No7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2451" y="-1362"/>
+            <point key="canvasLocation" x="-2453" y="-1702"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sb1" width="1200" height="800"/>
+    </resources>
 </document>

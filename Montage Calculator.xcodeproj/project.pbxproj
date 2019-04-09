@@ -107,11 +107,10 @@
 		032C3CE522302AFB00253B33 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				033FC9FF225CE65F00D6C452 /* ContactUs */,
+				033FC9FE225CE65600D6C452 /* Rates */,
+				03F989CE2256842600242691 /* Home */,
 				032C3CD222301ECF00253B33 /* AppDelegate.swift */,
-				03F989CE2256842600242691 /* Website */,
-				032C3CD422301ECF00253B33 /* Calculator.swift */,
-				03E9040722495C7400FDEB9C /* MainMenu.swift */,
-				03E9040B224BD32B00FDEB9C /* ContactUs.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -136,6 +135,22 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		033FC9FE225CE65600D6C452 /* Rates */ = {
+			isa = PBXGroup;
+			children = (
+				032C3CD422301ECF00253B33 /* Calculator.swift */,
+			);
+			path = Rates;
+			sourceTree = "<group>";
+		};
+		033FC9FF225CE65F00D6C452 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				03E9040B224BD32B00FDEB9C /* ContactUs.swift */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
 		03F32CD0223A9D2300920B49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,13 +169,14 @@
 			path = WebSite;
 			sourceTree = "<group>";
 		};
-		03F989CE2256842600242691 /* Website */ = {
+		03F989CE2256842600242691 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				03E9040722495C7400FDEB9C /* MainMenu.swift */,
 				03E90409224ABCA200FDEB9C /* WebSiteArticleTitle.swift */,
 				03F32CE522569C670079E7D8 /* DisplayWebPage.swift */,
 			);
-			path = Website;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		6299192BF92FBE07D15354BF /* Pods */ = {
