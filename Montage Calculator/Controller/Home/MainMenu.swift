@@ -14,6 +14,7 @@ import SVProgressHUD
 class MainMenu: UIViewController {
 
     let webView = WKWebView()
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBAction func openWebPageTitle(_ sender: Any) {
         SVProgressHUD.show(withStatus: "Loading...")
         webView.reload()
@@ -57,6 +58,9 @@ class MainMenu: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("item 1 loaded")
+
+//        scrollView.isExclusiveTouch = false
+//        scrollView.delaysContentTouches = false
         let url = URL(string: "https://www.yuchakcorp.com/blog")!
         let request = URLRequest(url: url)
         webView.load(request)
