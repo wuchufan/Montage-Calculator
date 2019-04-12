@@ -27,28 +27,26 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="0g5-5K-goo">
                                                 <rect key="frame" x="8" y="28" width="304" height="1190"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnH-ZN-dXk" userLabel="Interest Cell View 1">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnH-ZN-dXk" userLabel="TD">
                                                         <rect key="frame" x="0.0" y="0.0" width="304" height="170"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4He-Fc-jVU">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="170"/>
-                                                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Button"/>
                                                                 <connections>
                                                                     <action selector="toCalculator:" destination="PTO-0u-8gY" eventType="touchUpInside" id="UnV-aT-Uva"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLn-i4-SFw" userLabel="bank container">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLn-i4-SFw" userLabel="bank container">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="P2c-05-TYo" userLabel="bank image">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="td" translatesAutoresizingMaskIntoConstraints="NO" id="P2c-05-TYo" userLabel="bank image">
                                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="6b7-Tw-jwl"/>
                                                                             <constraint firstAttribute="width" constant="60" id="ugX-Xt-gPZ"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TD bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56P-DI-ssg">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TD Canada Trust" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56P-DI-ssg">
                                                                         <rect key="frame" x="61" y="0.0" width="243" height="59"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="59" id="61b-Us-Kl3"/>
@@ -69,7 +67,7 @@
                                                                     <constraint firstAttribute="width" constant="304" id="xJK-9n-Bq1"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPO-tk-k2M" userLabel="Bank and interest rate">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BPO-tk-k2M" userLabel="Bank and interest rate">
                                                                 <rect key="frame" x="0.0" y="60" width="304" height="110"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.21%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wC6-oh-SqT">
@@ -85,14 +83,12 @@
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zsc-7T-PdK">
                                                                         <rect key="frame" x="0.0" y="0.0" width="194" height="110"/>
-                                                                        <color key="backgroundColor" red="1" green="0.34095874339999999" blue="0.45502401240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="194" id="61l-hb-Jhe"/>
                                                                             <constraint firstAttribute="height" constant="110" id="gkK-dZ-iNj"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstItem="zsc-7T-PdK" firstAttribute="top" secondItem="BPO-tk-k2M" secondAttribute="top" id="CTW-Qm-s5b"/>
                                                                     <constraint firstItem="wC6-oh-SqT" firstAttribute="leading" secondItem="zsc-7T-PdK" secondAttribute="trailing" id="Nam-Ns-3Hj"/>
@@ -103,7 +99,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="4He-Fc-jVU" firstAttribute="top" secondItem="lnH-ZN-dXk" secondAttribute="top" id="Aar-O2-0AS"/>
                                                             <constraint firstAttribute="bottom" secondItem="BPO-tk-k2M" secondAttribute="bottom" id="BTp-Ot-Kyb"/>
@@ -115,28 +111,26 @@
                                                             <constraint firstAttribute="bottom" secondItem="4He-Fc-jVU" secondAttribute="bottom" id="zCL-ct-uf1"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POE-Sx-Iyb" userLabel="Interest Cell View 1">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POE-Sx-Iyb" userLabel="Scotiabank">
                                                         <rect key="frame" x="0.0" y="204" width="304" height="170"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C4x-1o-T1x">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="170"/>
-                                                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Button"/>
                                                                 <connections>
                                                                     <action selector="toCalculator:" destination="PTO-0u-8gY" eventType="touchUpInside" id="E5a-jq-pFc"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYp-NK-gdZ" userLabel="bank container">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FYp-NK-gdZ" userLabel="bank container">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dmS-8y-G9C" userLabel="bank image">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scotiabank" translatesAutoresizingMaskIntoConstraints="NO" id="dmS-8y-G9C" userLabel="bank image">
                                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="6CM-eL-B0a"/>
                                                                             <constraint firstAttribute="width" constant="60" id="QDU-8q-NaD"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TD bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-yy-R0i">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Scotiabank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lBC-yy-R0i">
                                                                         <rect key="frame" x="61" y="0.0" width="243" height="59"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="59" id="9fD-bO-B5L"/>
@@ -157,7 +151,7 @@
                                                                     <constraint firstAttribute="width" constant="304" id="Qe4-Jb-aO2"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKx-e0-cdj" userLabel="Bank and interest rate">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKx-e0-cdj" userLabel="Bank and interest rate">
                                                                 <rect key="frame" x="0.0" y="60" width="304" height="110"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.21%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxm-7h-5Tp">
@@ -173,14 +167,12 @@
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRo-HM-zdX">
                                                                         <rect key="frame" x="0.0" y="0.0" width="194" height="110"/>
-                                                                        <color key="backgroundColor" red="1" green="0.34095874339999999" blue="0.45502401240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="194" id="ZGX-7z-m9w"/>
                                                                             <constraint firstAttribute="height" constant="110" id="lE1-67-7OJ"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="110" id="LkC-Pi-9BO"/>
                                                                     <constraint firstAttribute="trailing" secondItem="Yxm-7h-5Tp" secondAttribute="trailing" id="Ml1-Lp-LVC"/>
@@ -191,7 +183,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="FYp-NK-gdZ" firstAttribute="leading" secondItem="POE-Sx-Iyb" secondAttribute="leading" id="0cs-2i-gyf"/>
                                                             <constraint firstItem="C4x-1o-T1x" firstAttribute="leading" secondItem="POE-Sx-Iyb" secondAttribute="leading" id="9zk-xu-u0t"/>
@@ -203,28 +195,26 @@
                                                             <constraint firstItem="C4x-1o-T1x" firstAttribute="top" secondItem="POE-Sx-Iyb" secondAttribute="top" id="upl-Bz-mhp"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bvk-hS-emF" userLabel="Interest Cell View 1">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bvk-hS-emF" userLabel="RBC">
                                                         <rect key="frame" x="0.0" y="408" width="304" height="170"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A84-Rm-8ZT">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="170"/>
-                                                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Button"/>
                                                                 <connections>
                                                                     <action selector="toCalculator:" destination="PTO-0u-8gY" eventType="touchUpInside" id="1Jm-g8-Seb"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-LS-HwF" userLabel="bank container">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wg1-LS-HwF" userLabel="bank container">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BUg-Ec-GCH" userLabel="bank image">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rbc" translatesAutoresizingMaskIntoConstraints="NO" id="BUg-Ec-GCH" userLabel="bank image">
                                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="IVj-fq-lhP"/>
                                                                             <constraint firstAttribute="width" constant="60" id="U0P-gc-gH7"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TD bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5U-YM-61e">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Royal Bank of Canada" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H5U-YM-61e">
                                                                         <rect key="frame" x="61" y="0.0" width="243" height="59"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="243" id="cII-rY-YbD"/>
@@ -245,7 +235,7 @@
                                                                     <constraint firstAttribute="trailing" secondItem="H5U-YM-61e" secondAttribute="trailing" id="Yf7-Vm-EqV"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivT-rB-pCc" userLabel="Bank and interest rate">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ivT-rB-pCc" userLabel="Bank and interest rate">
                                                                 <rect key="frame" x="0.0" y="60" width="304" height="110"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.21%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UOS-M2-Kf6">
@@ -261,14 +251,12 @@
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WS3-bX-Un2">
                                                                         <rect key="frame" x="0.0" y="0.0" width="194" height="110"/>
-                                                                        <color key="backgroundColor" red="1" green="0.34095874339999999" blue="0.45502401240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="110" id="YO2-Ri-ieB"/>
                                                                             <constraint firstAttribute="width" constant="194" id="y0H-TJ-KwH"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="304" id="8O3-Pl-TmW"/>
                                                                     <constraint firstItem="UOS-M2-Kf6" firstAttribute="top" secondItem="ivT-rB-pCc" secondAttribute="top" id="Fyr-Fp-haM"/>
@@ -279,7 +267,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstItem="A84-Rm-8ZT" firstAttribute="top" secondItem="Bvk-hS-emF" secondAttribute="top" id="8VG-eV-Nhv"/>
                                                             <constraint firstAttribute="trailing" secondItem="A84-Rm-8ZT" secondAttribute="trailing" id="CRE-8c-xzb"/>
@@ -291,28 +279,26 @@
                                                             <constraint firstItem="Wg1-LS-HwF" firstAttribute="leading" secondItem="Bvk-hS-emF" secondAttribute="leading" id="zl1-F6-5w2"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="st2-BX-H2A" userLabel="Interest Cell View 1">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="st2-BX-H2A" userLabel="Bank of Montreal">
                                                         <rect key="frame" x="0.0" y="612" width="304" height="170"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w8V-Ff-2hF">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="170"/>
-                                                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Button"/>
                                                                 <connections>
                                                                     <action selector="toCalculator:" destination="PTO-0u-8gY" eventType="touchUpInside" id="Dc6-h0-98Z"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQo-P2-6mn" userLabel="bank container">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZQo-P2-6mn" userLabel="bank container">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="T5z-CS-Pcd" userLabel="bank image">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bank of montreal" translatesAutoresizingMaskIntoConstraints="NO" id="T5z-CS-Pcd" userLabel="bank image">
                                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="60" id="J8m-QB-ezC"/>
                                                                             <constraint firstAttribute="height" constant="60" id="XIA-WY-9q5"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TD bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmG-Oq-F3h">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank of Montreal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmG-Oq-F3h">
                                                                         <rect key="frame" x="61" y="0.0" width="243" height="59"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="243" id="jO6-Yn-oSg"/>
@@ -333,7 +319,7 @@
                                                                     <constraint firstItem="T5z-CS-Pcd" firstAttribute="leading" secondItem="ZQo-P2-6mn" secondAttribute="leading" id="vgI-GA-Ezm"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CY-x8-pC2" userLabel="Bank and interest rate">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6CY-x8-pC2" userLabel="Bank and interest rate">
                                                                 <rect key="frame" x="0.0" y="60" width="304" height="110"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.21%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Nf-oz-enZ">
@@ -349,14 +335,12 @@
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g17-IK-C1U">
                                                                         <rect key="frame" x="0.0" y="0.0" width="194" height="110"/>
-                                                                        <color key="backgroundColor" red="1" green="0.34095874339999999" blue="0.45502401240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="194" id="dTL-GA-iU8"/>
                                                                             <constraint firstAttribute="height" constant="110" id="wnm-OG-U4G"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="304" id="1l6-2L-gbS"/>
                                                                     <constraint firstItem="5Nf-oz-enZ" firstAttribute="top" secondItem="6CY-x8-pC2" secondAttribute="top" id="IMD-rJ-4Fu"/>
@@ -367,7 +351,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="w8V-Ff-2hF" secondAttribute="trailing" id="CT3-nl-TH3"/>
                                                             <constraint firstAttribute="bottom" secondItem="6CY-x8-pC2" secondAttribute="bottom" id="O9O-5M-ZXA"/>
@@ -379,28 +363,26 @@
                                                             <constraint firstItem="ZQo-P2-6mn" firstAttribute="top" secondItem="st2-BX-H2A" secondAttribute="top" id="upX-aW-yWb"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZx-4e-pGe" userLabel="Interest Cell View 1">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WZx-4e-pGe" userLabel="National Bank of Canada">
                                                         <rect key="frame" x="0.0" y="816" width="304" height="170"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZlD-kT-keH">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="170"/>
-                                                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Button"/>
                                                                 <connections>
                                                                     <action selector="toCalculator:" destination="PTO-0u-8gY" eventType="touchUpInside" id="1BE-Jj-06A"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1b-qY-8Rg" userLabel="bank container">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b1b-qY-8Rg" userLabel="bank container">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cZR-9g-LfC" userLabel="bank image">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="national bank of canada" translatesAutoresizingMaskIntoConstraints="NO" id="cZR-9g-LfC" userLabel="bank image">
                                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="1cR-TV-QIl"/>
                                                                             <constraint firstAttribute="width" constant="60" id="9iK-zZ-SPd"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TD bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnk-JK-DYn">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="National Bank of Canada " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnk-JK-DYn">
                                                                         <rect key="frame" x="61" y="0.0" width="243" height="59"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="width" constant="243" id="0nB-9Z-Oac"/>
@@ -421,7 +403,7 @@
                                                                     <constraint firstItem="jnk-JK-DYn" firstAttribute="top" secondItem="b1b-qY-8Rg" secondAttribute="top" id="mz6-Op-XG6"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZm-ai-gAN" userLabel="Bank and interest rate">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IZm-ai-gAN" userLabel="Bank and interest rate">
                                                                 <rect key="frame" x="0.0" y="60" width="304" height="110"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.21%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oa1-89-YK3">
@@ -437,14 +419,12 @@
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vr2-rJ-uvF">
                                                                         <rect key="frame" x="0.0" y="0.0" width="194" height="110"/>
-                                                                        <color key="backgroundColor" red="1" green="0.34095874339999999" blue="0.45502401240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="110" id="lWT-Ia-1n2"/>
                                                                             <constraint firstAttribute="width" constant="194" id="qFz-if-EQp"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" constant="304" id="BOo-O7-yyt"/>
                                                                     <constraint firstItem="Oa1-89-YK3" firstAttribute="leading" secondItem="Vr2-rJ-uvF" secondAttribute="trailing" id="IrB-Tk-2To"/>
@@ -455,7 +435,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="IZm-ai-gAN" secondAttribute="trailing" id="0iK-qQ-3KT"/>
                                                             <constraint firstItem="b1b-qY-8Rg" firstAttribute="top" secondItem="WZx-4e-pGe" secondAttribute="top" id="1fN-aY-zTj"/>
@@ -467,28 +447,26 @@
                                                             <constraint firstAttribute="trailing" secondItem="ZlD-kT-keH" secondAttribute="trailing" id="owT-dP-JQB"/>
                                                         </constraints>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXA-Ny-imi" userLabel="Interest Cell View 1">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OXA-Ny-imi" userLabel="CIBC">
                                                         <rect key="frame" x="0.0" y="1020" width="304" height="170"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M9K-qr-pMb">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="170"/>
-                                                                <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Button"/>
                                                                 <connections>
                                                                     <action selector="toCalculator:" destination="PTO-0u-8gY" eventType="touchUpInside" id="2wZ-NN-B7v"/>
                                                                 </connections>
                                                             </button>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z37-DR-7GY" userLabel="bank container">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z37-DR-7GY" userLabel="bank container">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="60"/>
                                                                 <subviews>
-                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="245-NC-la1" userLabel="bank image">
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cibc" translatesAutoresizingMaskIntoConstraints="NO" id="245-NC-la1" userLabel="bank image">
                                                                         <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="60" id="7iQ-Db-qHN"/>
                                                                             <constraint firstAttribute="width" constant="60" id="eqr-vg-Xxw"/>
                                                                         </constraints>
                                                                     </imageView>
-                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TD bank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiW-lh-yAy">
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CIBC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiW-lh-yAy">
                                                                         <rect key="frame" x="61" y="0.0" width="243" height="59"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="59" id="UAx-aw-6dS"/>
@@ -509,7 +487,7 @@
                                                                     <constraint firstItem="245-NC-la1" firstAttribute="leading" secondItem="z37-DR-7GY" secondAttribute="leading" id="tda-YK-yv3"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kl3-O3-b2h" userLabel="Bank and interest rate">
+                                                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kl3-O3-b2h" userLabel="Bank and interest rate">
                                                                 <rect key="frame" x="0.0" y="60" width="304" height="110"/>
                                                                 <subviews>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.21%" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJB-b2-2gq">
@@ -525,14 +503,12 @@
                                                                     </label>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Snk-XA-EYn">
                                                                         <rect key="frame" x="0.0" y="0.0" width="194" height="110"/>
-                                                                        <color key="backgroundColor" red="1" green="0.34095874339999999" blue="0.45502401240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="110" id="LYC-c2-dae"/>
                                                                             <constraint firstAttribute="width" constant="194" id="l3k-Pk-iHM"/>
                                                                         </constraints>
                                                                     </view>
                                                                 </subviews>
-                                                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <constraints>
                                                                     <constraint firstItem="BJB-b2-2gq" firstAttribute="leading" secondItem="Snk-XA-EYn" secondAttribute="trailing" id="3Nq-vV-Uzl"/>
                                                                     <constraint firstAttribute="width" constant="304" id="Piw-5Y-6y9"/>
@@ -543,7 +519,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="M9K-qr-pMb" secondAttribute="trailing" id="76u-3i-Bmx"/>
                                                             <constraint firstAttribute="trailing" secondItem="Kl3-O3-b2h" secondAttribute="trailing" id="AYr-3z-k3C"/>
@@ -570,7 +546,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="34l-1x-2pE" firstAttribute="leading" secondItem="6f6-m2-hMP" secondAttribute="leading" id="NIN-JT-Vm9"/>
                                     <constraint firstItem="34l-1x-2pE" firstAttribute="top" secondItem="6f6-m2-hMP" secondAttribute="top" id="VpJ-ru-Lkr"/>
@@ -665,7 +641,6 @@
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9E-Fu-O2E">
                                                                 <rect key="frame" x="0.0" y="0.0" width="304" height="137"/>
-                                                                <color key="backgroundColor" red="0.078687436878681183" green="0.3889080286026001" blue="0.79205155372619629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
                                                                 <state key="normal">
                                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -678,7 +653,7 @@
                                                                 <rect key="frame" x="148" y="25" width="70" height="21"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sb1" translatesAutoresizingMaskIntoConstraints="NO" id="9TC-Y1-beA">
@@ -689,11 +664,11 @@
                                                                 <rect key="frame" x="148" y="82" width="148" height="21"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                         </subviews>
-                                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="trailing" secondItem="U9E-Fu-O2E" secondAttribute="trailing" id="IrQ-wb-fVu"/>
                                                             <constraint firstAttribute="bottom" secondItem="U9E-Fu-O2E" secondAttribute="bottom" id="PBs-RS-Kic"/>
@@ -703,11 +678,11 @@
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoK-Vx-lVP">
                                                         <rect key="frame" x="0.0" y="162" width="304" height="137"/>
-                                                        <color key="backgroundColor" red="0.078687436878681183" green="0.3889080286026001" blue="0.79205155372619629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKz-J9-LA9">
                                                         <rect key="frame" x="0.0" y="324" width="304" height="137"/>
-                                                        <color key="backgroundColor" red="0.078687436878681183" green="0.3889080286026001" blue="0.79205155372619629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </view>
                                                 </subviews>
                                                 <constraints>
@@ -716,7 +691,6 @@
                                                 </constraints>
                                             </stackView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.99953407049999998" green="0.98835557699999999" blue="0.47265523669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="qbp-dC-SY7" secondAttribute="bottom" constant="30" id="fVp-gd-quE"/>
                                             <constraint firstItem="qbp-dC-SY7" firstAttribute="centerX" secondItem="Tz6-eK-zrR" secondAttribute="centerX" id="lFx-Ox-n8j"/>
@@ -761,7 +735,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jig-Pq-3do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1646.25" y="-600"/>
+            <point key="canvasLocation" x="-1669" y="-537"/>
         </scene>
         <!--Articles-->
         <scene sceneID="aWI-O5-9EB">
@@ -931,7 +905,13 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bank of montreal" width="512" height="512"/>
+        <image name="cibc" width="246" height="246"/>
+        <image name="national bank of canada" width="180" height="180"/>
+        <image name="rbc" width="512" height="512"/>
         <image name="sb1" width="1200" height="800"/>
+        <image name="scotiabank" width="320" height="320"/>
+        <image name="td" width="1200" height="1074"/>
         <image name="thumb-1920-942234" width="1920" height="1080"/>
     </resources>
 </document>
