@@ -17,9 +17,6 @@ class LinkSorting {
             do {
                 let linkHref = try hrefElement.attr("href")
                 linkHrefArray.append(linkHref)
-                
-                
-                
             } catch Exception.Error(let type, let message) {
                 print (message)
             } catch {
@@ -29,4 +26,6 @@ class LinkSorting {
         let noDuplicateHrefArray = Array(NSOrderedSet(array: linkHrefArray)) as! [String]
         return noDuplicateHrefArray
     }
+    
+//    func checkImageLink (
 }

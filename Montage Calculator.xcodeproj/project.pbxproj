@@ -18,6 +18,8 @@
 		032C3D142231AB3D00253B33 /* ResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C3D122231AB3D00253B33 /* ResultTableViewCell.swift */; };
 		032C3D192231AE5C00253B33 /* Mortage Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 032C3D182231AE5C00253B33 /* Mortage Calculator.swift */; };
 		037D8EA1225F9F170061466B /* InterestRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037D8EA0225F9F160061466B /* InterestRates.swift */; };
+		037D8ECC2264EB840061466B /* webTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037D8ECA2264EB840061466B /* webTitleCell.swift */; };
+		037D8ECD2264EB840061466B /* webTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037D8ECB2264EB840061466B /* webTitleCell.xib */; };
 		03E9040822495C7400FDEB9C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E9040722495C7400FDEB9C /* MainMenu.swift */; };
 		03E9040A224ABCA400FDEB9C /* WebSiteArticleTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E90409224ABCA200FDEB9C /* WebSiteArticleTitle.swift */; };
 		03E9040C224BD32B00FDEB9C /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E9040B224BD32B00FDEB9C /* ContactUs.swift */; };
@@ -42,6 +44,8 @@
 		032C3D122231AB3D00253B33 /* ResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTableViewCell.swift; sourceTree = "<group>"; };
 		032C3D182231AE5C00253B33 /* Mortage Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mortage Calculator.swift"; sourceTree = "<group>"; };
 		037D8EA0225F9F160061466B /* InterestRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestRates.swift; sourceTree = "<group>"; };
+		037D8ECA2264EB840061466B /* webTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webTitleCell.swift; sourceTree = "<group>"; };
+		037D8ECB2264EB840061466B /* webTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = webTitleCell.xib; sourceTree = "<group>"; };
 		03E9040722495C7400FDEB9C /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		03E90409224ABCA200FDEB9C /* WebSiteArticleTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSiteArticleTitle.swift; sourceTree = "<group>"; };
 		03E9040B224BD32B00FDEB9C /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
@@ -124,6 +128,8 @@
 				032C3CE822302CB800253B33 /* TableViewCell.xib */,
 				032C3D122231AB3D00253B33 /* ResultTableViewCell.swift */,
 				032C3D112231AB3D00253B33 /* ResultTableViewCell.xib */,
+				037D8ECA2264EB840061466B /* webTitleCell.swift */,
+				037D8ECB2264EB840061466B /* webTitleCell.xib */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -268,6 +274,7 @@
 				032C3CEA22302CB800253B33 /* TableViewCell.xib in Resources */,
 				032C3CDA22301ED900253B33 /* Assets.xcassets in Resources */,
 				032C3CD822301ECF00253B33 /* Main.storyboard in Resources */,
+				037D8ECD2264EB840061466B /* webTitleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +347,7 @@
 				032C3D142231AB3D00253B33 /* ResultTableViewCell.swift in Sources */,
 				03E9040C224BD32B00FDEB9C /* ContactUs.swift in Sources */,
 				032C3CD322301ECF00253B33 /* AppDelegate.swift in Sources */,
+				037D8ECC2264EB840061466B /* webTitleCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

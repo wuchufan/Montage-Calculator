@@ -28,6 +28,16 @@ class WebScraping {
         let webTitles = try doc.getElementsByClass("font_5").array()
         let link = try doc.getElementsByAttributeValueContaining("href", "https://www.yuchakcorp.com/single-post").array()
         let webLinks = linkSorting.checkHerf(htmlArray: link)
+
+//        for i in try doc.getElementsByClass("wp2img").array(){
+//            print(i)
+//        }
+        for element in try doc.select("img").array(){
+            try print(element.attr("src"))
+//          .attr("src")
+//          doc.select("img").array()
+
+        }
         
 //
 //        print("------------------------------------------ Doc Begins -------------------------------------------")
@@ -40,7 +50,8 @@ class WebScraping {
 //        print(webLinks)
 //        print("------------------------------------------ WebLinks Ends -------------------------------------------")
 //
-//
+//        print(webImageLinks)
+//        print("------------------------------------------ WebImageLinks Ends -------------------------------------------")
         var contents = [WebContent]()
         for i in 0..<webTitles.count{
             let titles = try webTitles[i].text()

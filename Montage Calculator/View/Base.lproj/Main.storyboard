@@ -708,21 +708,21 @@
                                 </constraints>
                             </scrollView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="thumb-1920-942234" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGa-tv-Cya">
-                                <rect key="frame" x="0.0" y="64" width="320" height="152"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="148"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="152" id="n9h-DC-vsf"/>
+                                    <constraint firstAttribute="width" secondItem="bGa-tv-Cya" secondAttribute="height" multiplier="80:37" id="0rC-JF-aKc"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="SSk-XZ-yTX" firstAttribute="leading" secondItem="Dq9-Fq-2xa" secondAttribute="leading" id="0sq-fs-swm"/>
-                            <constraint firstItem="SSk-XZ-yTX" firstAttribute="top" secondItem="Dq9-Fq-2xa" secondAttribute="top" constant="148" id="EbJ-Z1-Ckq"/>
-                            <constraint firstItem="Dq9-Fq-2xa" firstAttribute="bottom" secondItem="SSk-XZ-yTX" secondAttribute="bottom" id="IiX-1l-QGQ"/>
-                            <constraint firstItem="Dq9-Fq-2xa" firstAttribute="trailing" secondItem="SSk-XZ-yTX" secondAttribute="trailing" id="KEs-bG-mmR"/>
-                            <constraint firstItem="bGa-tv-Cya" firstAttribute="trailing" secondItem="Dq9-Fq-2xa" secondAttribute="trailing" id="NST-Vf-Yrm"/>
-                            <constraint firstItem="bGa-tv-Cya" firstAttribute="top" secondItem="Dq9-Fq-2xa" secondAttribute="top" id="QIP-eT-KTY"/>
-                            <constraint firstItem="bGa-tv-Cya" firstAttribute="leading" secondItem="Dq9-Fq-2xa" secondAttribute="leading" id="fmd-I4-jdf"/>
+                            <constraint firstItem="SSk-XZ-yTX" firstAttribute="leading" secondItem="Dq9-Fq-2xa" secondAttribute="leading" id="0ye-xG-RIm"/>
+                            <constraint firstItem="SSk-XZ-yTX" firstAttribute="top" secondItem="bGa-tv-Cya" secondAttribute="bottom" id="899-4V-tQ8"/>
+                            <constraint firstItem="SSk-XZ-yTX" firstAttribute="bottom" secondItem="Dq9-Fq-2xa" secondAttribute="bottom" id="QYl-Yg-Ddi"/>
+                            <constraint firstItem="bGa-tv-Cya" firstAttribute="trailing" secondItem="Dq9-Fq-2xa" secondAttribute="trailing" id="UyZ-6D-kgp"/>
+                            <constraint firstItem="bGa-tv-Cya" firstAttribute="top" secondItem="Dq9-Fq-2xa" secondAttribute="top" id="ceR-wi-ov7"/>
+                            <constraint firstItem="bGa-tv-Cya" firstAttribute="leading" secondItem="Dq9-Fq-2xa" secondAttribute="leading" id="e1S-mA-qei"/>
+                            <constraint firstItem="SSk-XZ-yTX" firstAttribute="trailing" secondItem="Dq9-Fq-2xa" secondAttribute="trailing" id="ncO-io-C3j"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Dq9-Fq-2xa"/>
                     </view>
@@ -735,7 +735,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jig-Pq-3do" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1669" y="-537"/>
+            <point key="canvasLocation" x="-1670.625" y="-537.67605633802816"/>
         </scene>
         <!--Articles-->
         <scene sceneID="aWI-O5-9EB">
@@ -842,7 +842,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hUO-ir-sMf"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Contact Us" id="VDw-DA-kxG"/>
+                    <tabBarItem key="tabBarItem" title="Contact Us" image="location large" id="VDw-DA-kxG"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWL-HZ-axb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -871,7 +871,7 @@
         <scene sceneID="tHm-jF-d55">
             <objects>
                 <navigationController id="Md6-To-eLH" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" id="kAf-pn-mcb"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home large" id="kAf-pn-mcb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CAx-DS-uEV">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -888,7 +888,7 @@
         <scene sceneID="eHk-hV-6KF">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="glN-0v-Yrq" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Rates" id="kZU-Xy-iGt"/>
+                    <tabBarItem key="tabBarItem" title="Rates" image="rate large" id="kZU-Xy-iGt"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rdN-Gu-n7h">
                         <rect key="frame" x="0.0" y="20" width="320" height="44"/>
@@ -907,7 +907,10 @@
     <resources>
         <image name="bank of montreal" width="512" height="512"/>
         <image name="cibc" width="246" height="246"/>
+        <image name="home large" width="36" height="36"/>
+        <image name="location large" width="36" height="36"/>
         <image name="national bank of canada" width="180" height="180"/>
+        <image name="rate large" width="36" height="36"/>
         <image name="rbc" width="512" height="512"/>
         <image name="sb1" width="1200" height="800"/>
         <image name="scotiabank" width="320" height="320"/>
