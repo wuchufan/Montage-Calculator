@@ -25,11 +25,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHk-Tu-kDG">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fHk-Tu-kDG">
                         <rect key="frame" x="0.0" y="0.0" width="512" height="282"/>
-                        <constraints>
-                            <constraint firstAttribute="width" secondItem="fHk-Tu-kDG" secondAttribute="height" multiplier="256:141" id="f2P-L6-GjO"/>
-                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
