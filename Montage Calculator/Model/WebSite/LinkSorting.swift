@@ -11,6 +11,7 @@ import SwiftSoup
 class LinkSorting {
     
     var linkHrefArray = [String]()
+    var imageLinkArray = [String]()
     
     func checkHerf (htmlArray : Array<Element>) -> [String] {
         for hrefElement in htmlArray {
@@ -27,5 +28,18 @@ class LinkSorting {
         return noDuplicateHrefArray
     }
     
-//    func checkImageLink (
+    func checkImageLink (imageArray : Array<Element>) ->[String] {
+        for element in imageArray {
+            do {
+                let es = try element.attr("src")
+                imageLinkArray.append(es)
+            } catch Exception.Error(let type, let message) {
+                print (message)
+            } catch {
+                print (error)
+            }
+        }
+        return imageLinkArray
+
+    }
 }

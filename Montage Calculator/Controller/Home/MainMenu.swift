@@ -18,7 +18,7 @@ class MainMenu: UIViewController {
     @IBAction func openWebPageTitle(_ sender: Any) {
         SVProgressHUD.show(withStatus: "Loading...")
         webView.reload()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.8){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0){
             self.webView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (innerHTML, error) in
                 do {
                     //print ("innerHTML is : \(innerHTML)")

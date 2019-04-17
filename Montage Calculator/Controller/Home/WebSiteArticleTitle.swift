@@ -23,8 +23,8 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         let cell = titleContainer.dequeueReusableCell(withIdentifier: "webTitleCell", for: indexPath) as! webTitleCell
         cell.webArticleTitle.text! = receivedWebContent[indexPath.row].title
-        
-        let imageURL = URL(string: "https://static.wixstatic.com/media/550097_d8223eeed79f4eb5b54c15e164a16daa~mv2.png/v1/fill/w_176,h_186,al_c,usm_0.66_1.00_0.01/yuchak%20corp%20logo.png")
+        let image = receivedWebContent[indexPath.row].imageLink
+        let imageURL = URL(string: "\(image)")
         
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: imageURL!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
@@ -44,6 +44,13 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let dataSentToWebPage = receivedWebContent[indexPath.row].link
         performSegue(withIdentifier: "segueToWebPage", sender: dataSentToWebPage)
     }
+    
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        let cell = titleContainer.dequeueReusableCell(withIdentifier: "webTitleCell", for: indexPath) as! webTitleCell
+//        cell.webArticleTitle
+//    }
+//
+//    func getImageView (
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! DisplayWebPage

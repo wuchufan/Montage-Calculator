@@ -19,6 +19,9 @@ class webTitleCell: UITableViewCell {
 
         webArticleTitle.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
         webArticleTitle.numberOfLines = 0
+        webArticleImage.contentMode = .scaleAspectFit
+//         .scaleAspectFill
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

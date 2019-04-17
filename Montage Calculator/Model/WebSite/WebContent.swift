@@ -12,4 +12,5 @@ struct WebContent {
     
     let title : String
     let link : String
+    let imageLink : String
 }
