@@ -19,7 +19,7 @@ class webTitleCell: UITableViewCell {
 
         webArticleTitle.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
         webArticleTitle.numberOfLines = 0
-        webArticleImage.contentMode = .scaleAspectFit
+//        webArticleImage.contentMode = .scaleAspectFit
 //         .scaleAspectFill
         
     }

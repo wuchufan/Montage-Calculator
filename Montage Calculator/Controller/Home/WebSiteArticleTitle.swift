@@ -22,7 +22,7 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = titleContainer.dequeueReusableCell(withIdentifier: "webTitleCell", for: indexPath) as! webTitleCell
-        cell.webArticleTitle.text! = receivedWebContent[indexPath.row].title
+        cell.webArticleTitle.text! = receivedWebContent[indexPath.row].title 
         let image = receivedWebContent[indexPath.row].imageLink
         let imageURL = URL(string: "\(image)")
         
@@ -48,6 +48,7 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
 //        let cell = titleContainer.dequeueReusableCell(withIdentifier: "webTitleCell", for: indexPath) as! webTitleCell
 //        cell.webArticleTitle
+//        return CGFloat(
 //    }
 //
 //    func getImageView (
@@ -62,7 +63,7 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
 //        titleContainer.estimatedRowHeight = 120.0
 //    }
 //
-    
+//
     
     override func viewDidLoad() {
         super.viewDidLoad()
