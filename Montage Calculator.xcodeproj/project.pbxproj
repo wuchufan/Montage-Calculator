@@ -20,6 +20,7 @@
 		037D8EA1225F9F170061466B /* InterestRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037D8EA0225F9F160061466B /* InterestRates.swift */; };
 		037D8ECC2264EB840061466B /* webTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037D8ECA2264EB840061466B /* webTitleCell.swift */; };
 		037D8ECD2264EB840061466B /* webTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 037D8ECB2264EB840061466B /* webTitleCell.xib */; };
+		03A120752268C4AD007C7B0E /* ImageParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A120742268C4AD007C7B0E /* ImageParameter.swift */; };
 		03E9040822495C7400FDEB9C /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E9040722495C7400FDEB9C /* MainMenu.swift */; };
 		03E9040A224ABCA400FDEB9C /* WebSiteArticleTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E90409224ABCA200FDEB9C /* WebSiteArticleTitle.swift */; };
 		03E9040C224BD32B00FDEB9C /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E9040B224BD32B00FDEB9C /* ContactUs.swift */; };
@@ -46,6 +47,7 @@
 		037D8EA0225F9F160061466B /* InterestRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterestRates.swift; sourceTree = "<group>"; };
 		037D8ECA2264EB840061466B /* webTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webTitleCell.swift; sourceTree = "<group>"; };
 		037D8ECB2264EB840061466B /* webTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = webTitleCell.xib; sourceTree = "<group>"; };
+		03A120742268C4AD007C7B0E /* ImageParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageParameter.swift; sourceTree = "<group>"; };
 		03E9040722495C7400FDEB9C /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		03E90409224ABCA200FDEB9C /* WebSiteArticleTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSiteArticleTitle.swift; sourceTree = "<group>"; };
 		03E9040B224BD32B00FDEB9C /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
@@ -160,6 +162,14 @@
 			path = ContactUs;
 			sourceTree = "<group>";
 		};
+		03A120762268C6B6007C7B0E /* WebSite-Article */ = {
+			isa = PBXGroup;
+			children = (
+				03A120742268C4AD007C7B0E /* ImageParameter.swift */,
+			);
+			path = "WebSite-Article";
+			sourceTree = "<group>";
+		};
 		03F32CD0223A9D2300920B49 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,6 +181,7 @@
 		03F32CE92257C5080079E7D8 /* WebSite */ = {
 			isa = PBXGroup;
 			children = (
+				03A120762268C6B6007C7B0E /* WebSite-Article */,
 				03F32CDE225698CE0079E7D8 /* WebScraping.swift */,
 				03F32CE0225698F80079E7D8 /* WebContent.swift */,
 				03F32CE722569FB80079E7D8 /* LinkSorting.swift */,
@@ -343,6 +354,7 @@
 				032C3CE922302CB800253B33 /* TableViewCell.swift in Sources */,
 				032C3CD522301ECF00253B33 /* Calculator.swift in Sources */,
 				03F32CE822569FB80079E7D8 /* LinkSorting.swift in Sources */,
+				03A120752268C4AD007C7B0E /* ImageParameter.swift in Sources */,
 				037D8EA1225F9F170061466B /* InterestRates.swift in Sources */,
 				032C3D142231AB3D00253B33 /* ResultTableViewCell.swift in Sources */,
 				03E9040C224BD32B00FDEB9C /* ContactUs.swift in Sources */,

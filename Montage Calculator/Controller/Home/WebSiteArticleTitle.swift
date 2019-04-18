@@ -9,14 +9,18 @@
 import UIKit
 import WebKit
 
+
+
 class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var titleContainer: UITableView!
     var receivedWebContent : [WebContent]!
     var imagesHeight = [CGFloat]()
+    var labelHeight = [CGFloat]()
+    var imagesParameters = [ImageParameter]()
     var images = [UIImageView]()
     var titles = [String]()
-//    var labelHeight : CGFloat!
+
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -24,26 +28,30 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        print("IOWEJQOIWJE")
         let cell = titleContainer.dequeueReusableCell(withIdentifier: "webTitleCell", for: indexPath) as! webTitleCell
-//        cell.webArticleTitle.text! = receivedWebContent[indexPath.row].title
-        cell.webArticleTitle.text! = titles[indexPath.row]
+
+        cell.webArticleTitle.text! = titles[indexPath.row] 
+        labelHeight.append(cell.webArticleTitle.frame.height)
+        print(labelHeight)
+        print("height of label is0 :\(cell.webArticleTitle.frame.height)")
         let image = receivedWebContent[indexPath.row].imageLink
         let imageURL = URL(string: "\(image)")
-
+ 
         DispatchQueue.global().async {
             let data = try? Data(contentsOf: imageURL!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
             DispatchQueue.main.async {
                 cell.webArticleImage.image = UIImage(data: data!)
+                
+                print("height of label is :\(cell.webArticleTitle.frame.height)")
+                print("height of the image is :\(cell.webArticleImage.image?.size.height)")
+                print("width of the image is :\(cell.webArticleImage.image?.size.width)")
+                print("height of the imageView is :\(cell.webArticleImage.frame.height)")
+                print("width of the imageView is : \(cell.webArticleImage.frame.width)")
             }
+
         }
 
-        print("height of label is :\(cell.webArticleTitle.frame.height)")
-        print("height of the image is :\(cell.webArticleImage.image?.size.height)")
-        print("width of the image is :\(cell.webArticleImage.image?.size.width)")
-        print("height of the imageView is :\(cell.webArticleImage.frame.height)")
-        print("width of the imageView is : \(cell.webArticleImage.frame.width)")
-//        labelHeight = cell.webArticleTitle.frame.height
-//        print("in cell at row: \(labelHeight)")
         return cell
     }
     
@@ -56,47 +64,49 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
         performSegue(withIdentifier: "segueToWebPage", sender: dataSentToWebPage)
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-////        guard labelHeight != nil else {return CGFloat}
-////        print("qwdqdwqwdwq\(labelHeight)")
-//
-//        return CGFloat(imagesHeight[indexPath.row]+25.5)
-//    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        let ratio = getImageWidthHeightRatio(indexPath: indexPath)
+        print("qweqweqwe")
+        print(labelHeight)
+        return CGFloat(320/ratio + 50.5)
+    }
     
     func configureTitle(){
+//        let cell = webTitleCell()
         for i in 0..<receivedWebContent.count {
             titles.append(receivedWebContent[i].title)
+//            cell.webArticleTitle.text! = titles[i]
+//            print(cell.webArticleTitle.frame.height)
         }
     }
-//    func configureImage(){
-//        var cg = CGFloat()
-//        for i in 0..<receivedWebContent.count{
-//
-//            let image = receivedWebContent[i].imageLink
-//            let imageURL = URL(string: "\(image)")
-//
-//            let data = try? Data(contentsOf: imageURL!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
-//
-//            cg = UIImage(data: data!)!.size.height
-//            self.imagesHeight.append(cg)
-////            print("inclosure: \(self.imagesHeight)")
-//        }
-//
-////        print("out of closure: \(imagesHeight)")
-//    }
+    func configureImage(){
+        for i in 0..<receivedWebContent.count{
+            let image = receivedWebContent[i].imageLink
+            let imageURL = URL(string: "\(image)")
+            let data = try? Data(contentsOf: imageURL!) //make sure your image in this url does exist, otherwise unwrap in a if let check / try-catch
+            let cgh = UIImage(data: data!)!.size.height
+            let cgw = UIImage(data: data!)!.size.width
+            let parameter = ImageParameter(width: cgw, height: cgh)
+            imagesParameters.append(parameter)
+        }
 
-    
+    }
+    func getImageWidthHeightRatio(indexPath: IndexPath) -> CGFloat{
+        let ratio = CGFloat(imagesParameters[indexPath.row].width / imagesParameters[indexPath.row].height)
+        return ratio
+    }
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let destination = segue.destination as! DisplayWebPage
         destination.displayWebLink = sender as? String
     }
     
-//    func configureTableView(){
-//        titleContainer.rowHeight = UITableView.automaticDimension
-//        titleContainer.estimatedRowHeight = 120.0
-//    }
-//
-//
+    func configureTableView(){
+        titleContainer.rowHeight = UITableView.automaticDimension
+        titleContainer.estimatedRowHeight = 300
+    }
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -105,8 +115,9 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
         titleContainer.dataSource = self
         titleContainer.register(UINib(nibName: "webTitleCell", bundle: nil), forCellReuseIdentifier: "webTitleCell")
         configureTitle()
-//        configureImage()
+        configureImage()
 //        configureTableView()
+
         
         
 
