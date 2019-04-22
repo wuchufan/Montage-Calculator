@@ -21,7 +21,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjk-8a-8xf">
                         <rect key="frame" x="0.0" y="282" width="512" height="25.5"/>
-                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -30,13 +30,14 @@
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="sjk-8a-8xf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="06p-vf-40e"/>
-                    <constraint firstItem="fHk-Tu-kDG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0VQ-RZ-hfr"/>
-                    <constraint firstAttribute="bottom" secondItem="sjk-8a-8xf" secondAttribute="bottom" constant="-0.5" id="8CH-gn-XwM"/>
-                    <constraint firstAttribute="trailing" secondItem="sjk-8a-8xf" secondAttribute="trailing" id="Umu-5C-RSm"/>
-                    <constraint firstAttribute="trailing" secondItem="fHk-Tu-kDG" secondAttribute="trailing" id="ktU-0s-dNN"/>
-                    <constraint firstItem="sjk-8a-8xf" firstAttribute="top" secondItem="fHk-Tu-kDG" secondAttribute="bottom" id="n4a-ld-Fny"/>
-                    <constraint firstItem="fHk-Tu-kDG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yUE-LT-iLI"/>
+                    <constraint firstItem="sjk-8a-8xf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8MI-E3-9Em"/>
+                    <constraint firstItem="sjk-8a-8xf" firstAttribute="top" secondItem="fHk-Tu-kDG" secondAttribute="bottom" id="N4A-XV-7JV"/>
+                    <constraint firstAttribute="bottom" secondItem="sjk-8a-8xf" secondAttribute="bottom" constant="-0.5" id="R2a-D0-wvs"/>
+                    <constraint firstItem="fHk-Tu-kDG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VXe-uC-fiD"/>
+                    <constraint firstAttribute="trailing" secondItem="fHk-Tu-kDG" secondAttribute="trailing" id="X3r-ZX-vmT"/>
+                    <constraint firstItem="sjk-8a-8xf" firstAttribute="top" secondItem="fHk-Tu-kDG" secondAttribute="bottom" id="XTa-CV-6v5"/>
+                    <constraint firstAttribute="trailing" secondItem="sjk-8a-8xf" secondAttribute="trailing" id="Zgv-Dk-j7c"/>
+                    <constraint firstItem="fHk-Tu-kDG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="fgN-de-IS3"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

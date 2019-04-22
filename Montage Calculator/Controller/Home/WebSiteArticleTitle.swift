@@ -66,9 +66,12 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let ratio = getImageWidthHeightRatio(indexPath: indexPath)
+        let text = titles[indexPath.row]
+        let estimatedheight = calculateEstimatedHeight(text: text)
         print("qweqweqwe")
-        print(labelHeight)
-        return CGFloat(320/ratio + 50.5)
+        print ("height of image : \(320/ratio)")
+        print("height of label :\(estimatedheight.height)")
+        return CGFloat(320/ratio + estimatedheight.height)
     }
     
     func configureTitle(){
@@ -101,11 +104,19 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
         destination.displayWebLink = sender as? String
     }
     
-    func configureTableView(){
-        titleContainer.rowHeight = UITableView.automaticDimension
-        titleContainer.estimatedRowHeight = 300
-    }
+//    func configureTableView(){
+//        titleContainer.rowHeight = UITableView.automaticDimension
+//        titleContainer.estimatedRowHeight = 25
+//    }
+    func calculateEstimatedHeight(text:String) -> CGRect{
+        let size = CGSize(width: view.frame.width, height: 1000)
+        let options = NSStringDrawingOptions.usesFontLeading.union(.usesLineFragmentOrigin)
+        let attribute = [NSAttributedString.Key.font:UIFont.boldSystemFont(ofSize: 21)]
+//        let attribute = [NSAttributedString.Key.font:
+        let estimatedHeight = NSString(string: text).boundingRect(with: size, options: options, attributes: attribute, context: nil)
 
+        return estimatedHeight
+    }
 
     
     override func viewDidLoad() {
@@ -116,6 +127,8 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
         titleContainer.register(UINib(nibName: "webTitleCell", bundle: nil), forCellReuseIdentifier: "webTitleCell")
         configureTitle()
         configureImage()
+//                titleContainer.rowHeight = UITableView.automaticDimension
+//                titleContainer.estimatedRowHeight = 120
 //        configureTableView()
 
         
