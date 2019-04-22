@@ -678,7 +678,22 @@
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aoK-Vx-lVP">
                                                         <rect key="frame" x="0.0" y="162" width="304" height="137"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yh7-G8-SBE">
+                                                                <rect key="frame" x="0.0" y="0.0" width="304" height="137"/>
+                                                                <state key="normal" title="Under construction"/>
+                                                                <connections>
+                                                                    <action selector="openHouseInfo:" destination="UHE-0w-Ppz" eventType="touchUpInside" id="JmI-fW-DEn"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
                                                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="Yh7-G8-SBE" secondAttribute="trailing" id="JpN-lV-gJw"/>
+                                                            <constraint firstItem="Yh7-G8-SBE" firstAttribute="leading" secondItem="aoK-Vx-lVP" secondAttribute="leading" id="VTX-vf-qC2"/>
+                                                            <constraint firstItem="Yh7-G8-SBE" firstAttribute="top" secondItem="aoK-Vx-lVP" secondAttribute="top" id="Yd1-q7-9Ho"/>
+                                                            <constraint firstAttribute="bottom" secondItem="Yh7-G8-SBE" secondAttribute="bottom" id="shf-eM-pPF"/>
+                                                        </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKz-J9-LA9">
                                                         <rect key="frame" x="0.0" y="324" width="304" height="137"/>

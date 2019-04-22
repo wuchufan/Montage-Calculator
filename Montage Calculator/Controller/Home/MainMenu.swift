@@ -14,15 +14,19 @@ import SVProgressHUD
 class MainMenu: UIViewController {
 
     let webView = WKWebView()
+    let webViewEstate = WKWebView()
     @IBOutlet weak var scrollView: UIScrollView!
     @IBAction func openWebPageTitle(_ sender: Any) {
         SVProgressHUD.show(withStatus: "Loading...")
+//        let url = URL(string: "https://www.yuchakcorp.com/blog")!
+//        let request = URLRequest(url: url)
+//        webView.load(request)
         webView.reload()
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0){
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
             self.webView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (innerHTML, error) in
                 do {
                     //print ("innerHTML is : \(innerHTML)")
-                    let segueWebScraping = try WebScraping(innerHTML)
+                    let segueWebScraping = try WebScraping(innerHTML, "information")
                     guard segueWebScraping.contents.count != 0  else {
                         SVProgressHUD.dismiss()
                         self.ShowWebError()
@@ -37,6 +41,31 @@ class MainMenu: UIViewController {
             }
         }
 
+    }
+    @IBAction func openHouseInfo(_ sender: Any) {
+        SVProgressHUD.show(withStatus: "Loading...")
+//        let url = URL(string: "https://www.yuchakcorp.com/canadianestate")!
+//        let request = URLRequest(url: url)
+//        webView.load(request)
+        webViewEstate.reload()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
+            self.webViewEstate.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (innerHTML, error) in
+                do {
+                    //print ("innerHTML is : \(innerHTML)")
+                    let segueWebScraping = try WebScraping(innerHTML, "estate")
+                    guard segueWebScraping.contents.count != 0  else {
+                        SVProgressHUD.dismiss()
+                        self.ShowWebError()
+                        return
+                    }
+                    self.performSegue(withIdentifier: "segue", sender: segueWebScraping.contents)
+                    SVProgressHUD.dismiss()
+                    
+                } catch {
+                    print (error)
+                }
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -59,10 +88,11 @@ class MainMenu: UIViewController {
         super.viewDidLoad()
         print("item 1 loaded")
 
-//        scrollView.isExclusiveTouch = false
-//        scrollView.delaysContentTouches = false
         let url = URL(string: "https://www.yuchakcorp.com/blog")!
         let request = URLRequest(url: url)
+        let eurl = URL(string: "https://www.yuchakcorp.com/canadianestate")!
+        let erequest = URLRequest(url: eurl)
+        webViewEstate.load(erequest)
         webView.load(request)
         
         
