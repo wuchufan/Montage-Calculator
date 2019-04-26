@@ -33,8 +33,8 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
         cell.webArticleTitle.text! = titles[indexPath.row] 
         labelHeight.append(cell.webArticleTitle.frame.height)
-        print(labelHeight)
-        print("height of label is0 :\(cell.webArticleTitle.frame.height)")
+//        print(labelHeight)
+//        print("height of label is0 :\(cell.webArticleTitle.frame.height)")
         let image = receivedWebContent[indexPath.row].imageLink
         let imageURL = URL(string: "\(image)")
  
@@ -68,10 +68,10 @@ class Website: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let ratio = getImageWidthHeightRatio(indexPath: indexPath)
         let text = titles[indexPath.row]
         let estimatedheight = calculateEstimatedHeight(text: text)
-        print("qweqweqwe")
-        print ("height of image : \(320/ratio)")
-        print("height of label :\(estimatedheight.height)")
-        return CGFloat(320/ratio + estimatedheight.height)
+//        print("qweqweqwe")
+        print ("estimated height of image : \(view.frame.width/ratio)")
+        print("estimated height of label :\(estimatedheight.height)")
+        return CGFloat(view.frame.width/ratio + estimatedheight.height)
     }
     
     func configureTitle(){

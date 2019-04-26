@@ -14,3 +14,8 @@ struct WebContent {
     let link : String
     let imageLink : String
 }
+
+struct EstateWebContent {
+    let title : String
+    let imageLink : String
+}

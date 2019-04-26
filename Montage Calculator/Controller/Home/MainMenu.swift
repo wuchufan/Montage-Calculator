@@ -15,18 +15,19 @@ class MainMenu: UIViewController {
 
     let webView = WKWebView()
     let webViewEstate = WKWebView()
-    @IBOutlet weak var scrollView: UIScrollView!
-    @IBAction func openWebPageTitle(_ sender: Any) {
+    var buttonIdentifier : Int = 0
+
+    @IBOutlet weak var infoView: UIView!
+    @IBOutlet weak var estateView: UIView!
+    @IBAction func openWebPageTitle(_ sender: UIButton) {
+        buttonIdentifier = sender.tag
         SVProgressHUD.show(withStatus: "Loading...")
-//        let url = URL(string: "https://www.yuchakcorp.com/blog")!
-//        let request = URLRequest(url: url)
-//        webView.load(request)
         webView.reload()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
             self.webView.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (innerHTML, error) in
                 do {
                     //print ("innerHTML is : \(innerHTML)")
-                    let segueWebScraping = try WebScraping(innerHTML, "information")
+                    let segueWebScraping = try WebScraping(innerHTML)
                     guard segueWebScraping.contents.count != 0  else {
                         SVProgressHUD.dismiss()
                         self.ShowWebError()
@@ -42,23 +43,21 @@ class MainMenu: UIViewController {
         }
 
     }
-    @IBAction func openHouseInfo(_ sender: Any) {
+    @IBAction func openHouseInfo(_ sender: UIButton) {
+        buttonIdentifier = sender.tag
         SVProgressHUD.show(withStatus: "Loading...")
-//        let url = URL(string: "https://www.yuchakcorp.com/canadianestate")!
-//        let request = URLRequest(url: url)
-//        webView.load(request)
         webViewEstate.reload()
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5){
             self.webViewEstate.evaluateJavaScript("document.getElementsByTagName('html')[0].innerHTML") { (innerHTML, error) in
                 do {
                     //print ("innerHTML is : \(innerHTML)")
-                    let segueWebScraping = try WebScraping(innerHTML, "estate")
-                    guard segueWebScraping.contents.count != 0  else {
+                    let segueWebScraping = try EstateWebScraping(innerHTML)
+                    guard segueWebScraping.estateContents.count != 0  else {
                         SVProgressHUD.dismiss()
                         self.ShowWebError()
                         return
                     }
-                    self.performSegue(withIdentifier: "segue", sender: segueWebScraping.contents)
+                    self.performSegue(withIdentifier: "segueToEstate", sender: segueWebScraping.estateContents)
                     SVProgressHUD.dismiss()
                     
                 } catch {
@@ -69,10 +68,17 @@ class MainMenu: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let contents = sender as AnyObject as? [WebContent], let destination = segue.destination as? Website else {
-            return
+        if buttonIdentifier == 0 {
+            let contents = sender as AnyObject as? [WebContent]
+            let destination = segue.destination as? Website
+            if let contents = contents, let destination = destination {destination.receivedWebContent = contents} else {print ("it is nil")}
+        } else if buttonIdentifier == 1 {
+            let contents = sender as AnyObject as? [EstateWebContent]
+            let destination = segue.destination as? Estate
+            if let contents = contents, let destination = destination {destination.estateReceivedContent = contents} else {print ("it is nil")}
         }
-        destination.receivedWebContent = contents
+        
+
     }
     
     func ShowWebError(){
@@ -92,6 +98,8 @@ class MainMenu: UIViewController {
         let request = URLRequest(url: url)
         let eurl = URL(string: "https://www.yuchakcorp.com/canadianestate")!
         let erequest = URLRequest(url: eurl)
+        infoView.buttonDesign()
+        estateView.buttonDesign()
         webViewEstate.load(erequest)
         webView.load(request)
         
